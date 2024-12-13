@@ -21,6 +21,9 @@ export default function Naver() {
             <div>
               <Link href="/movie">MOVIE</Link>
             </div>
+            <div>
+              <Link href="/board">POSTS</Link>
+            </div>
             {status === 'authenticated' ? (
               <>
                 <div className="flex gap-2 items-center">
@@ -66,6 +69,12 @@ export default function Naver() {
       {menuOpen && (
         <div className="lg:hidden flex flex-col space-y-2 mt-4">
           <div className="flex gap-4 items-center">
+            <div>
+              <Link href="/movie">MOVIE</Link>
+            </div>
+            <div>
+              <Link href="/board">BOARD</Link>
+            </div>
             {status === 'authenticated' ? (
               <>
                 <div className="flex gap-2 items-center">
